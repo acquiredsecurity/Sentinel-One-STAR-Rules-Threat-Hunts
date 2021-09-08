@@ -1,2 +1,0 @@
-# SentinelOneStarRules
-SentinelOne STAR Rules
