@@ -1,0 +1,5 @@
+Title: Exposed PowerShell file downloads
+description: Detect files being donaloded with powershell
+date: 1/1/2019
+operating_system: windows
+query: ( ( SrcProcCmdLine Contains Anycase "Net.Web" Or SrcProcCmdLine Contains Anycase "WebRequest" OR SrcProcCmdLine Contains Anycase "BitsTransfer" OR SrcProcCmdLine Contains Anycase "DownloadFile" ) AND EventType = "Command Script" )  
