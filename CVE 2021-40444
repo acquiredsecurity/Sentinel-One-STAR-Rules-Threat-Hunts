@@ -2,6 +2,7 @@ title: CVE 2021-40444
 description: Detect GET from parent proess to hunt for URLs that end in HTML. (High fidelity, can exclude sharepoint for betetr results)
 date: 9/8/2020
 operating_system: windows
+author: B-Rad Rough
 query: EndpointOS = "windows" AND SrcProcName In AnyCase ( "winword.exe" , "excel.exe" , "powerpnt.exe" )  AND EventType = "GET" AND ObjectType = "url" AND URL EndsWith Anycase "html" 
 false_positives: sharepoint --optional AND URL Does Not ContainCIS "sharepoint"
 
