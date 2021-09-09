@@ -1,0 +1,7 @@
+  
+title: CVE 2021-40444 - Known Domains
+description: Detect URL Connections to known/possible Domains for CVE 2021-40444 
+date: 9/8/2020
+operating_system: windows
+author: B-Rad Rough
+query: URL RegExp "(.*\.)?(dpawevi|dodefoh|hidusi|macuwuf|joxinu|bawafe|buyahu|duhuwe|jafiha|jikoxaz|luherih|mevepu|mlogfr|nagiwo|nupahe|pazmqii|pomotam|pozotuc|rasokuc|refebi|rucajit|rurofo|tamunar|tepuden|tutusr|viwiba|wiwexu|ximihul|yeruje|yiviji|zosohev|zudoka|zuwevex).com"
