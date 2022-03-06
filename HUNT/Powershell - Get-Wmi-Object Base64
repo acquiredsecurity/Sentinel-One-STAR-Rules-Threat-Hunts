@@ -1,0 +1,7 @@
+Title: Powershell - base64 string Get-WmiObject
+description: Detects base64 encoded string Get-WmiObject
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdLine Contains Anycase "RwBlAHQALQBXAG0AaQBPAGIAagBlAGMAdAAg"
