@@ -1,4 +1,4 @@
-Title: ASoftware:WinScp
+Title: Software:WinScp
 description: Alert on WinSCP making connections. Cert used in case atatckers change file name.
 Kill Chain: Installation
 date: 1/1/2019
