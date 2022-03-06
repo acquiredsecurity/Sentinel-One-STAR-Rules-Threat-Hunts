@@ -1,5 +1,8 @@
 # SentinelOneStarRules
-SentinelOne STAR Rules and Threat Hunts
+SentinelOne STAR Rules and Threat Hunts:::::::::::::::
+
+
+
 
 The following Repository Contains STAR rules and Threat Hunts for the EDR SOlution SentinelOne.
 
