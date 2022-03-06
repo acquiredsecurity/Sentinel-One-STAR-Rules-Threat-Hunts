@@ -1,0 +1,7 @@
+Title: PowerShell - Service Creation
+description: Detects service creations as mapped to S1 indictaor telemetry 
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: IndicatorName = "ServiceCreate" And SrcProcParentName Contains Anycase "PowerShell"
