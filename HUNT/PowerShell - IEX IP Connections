@@ -1,0 +1,7 @@
+Title: PowerShell - IEX & IP Conenction
+description: Detects PowerShell Invoke-Expression and a IP Connection Exists
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdLine Contains Anycase "IEX" AND SrcProcName = "powershell.exe" AND DstIP EXISTS
