@@ -1,0 +1,7 @@
+Title: Software: Nirsoft Tool Certificate Alert
+description: Detects process creation for software signed with Nirsoft certificate
+Kill Chain: Installation
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query:TgtProcPublisher contains "NIR SOFER" and EventType = "Process Creation"
