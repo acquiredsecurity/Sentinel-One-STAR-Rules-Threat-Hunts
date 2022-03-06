@@ -1,0 +1,7 @@
+Title: RUNDL with Start Delay
+description: Detects command line StartW and DLL file
+Kill Chain: Installation
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdLine Contains Anycase “StartW” AND SrcProcCmdLine Contains Anycase “.dll” AND CmdLine Does Not ContainCIS “Startw.exe” 
