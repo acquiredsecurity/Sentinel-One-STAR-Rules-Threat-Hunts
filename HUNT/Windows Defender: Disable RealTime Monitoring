@@ -1,4 +1,7 @@
-
-
-
-SrcProcCmdLine Contains Anycase “Set-MpPreference -DisableRealtimeMonitoring”
+Title: Windows Defender: Disable Realtime Monitoring
+description: Disables WIndows Defender via Command Line
+Kill Chain: Installation
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdLine Contains Anycase “Set-MpPreference -DisableRealtimeMonitoring”
