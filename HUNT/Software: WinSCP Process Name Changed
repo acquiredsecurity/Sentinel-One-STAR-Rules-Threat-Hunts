@@ -1,4 +1,10 @@
-
+Title: Software:WinScp
+description: Alert on WinSCP where process name does not match WinSCP default process name
+Kill Chain: Exfil
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query:
 
 
 ( SrcProcPublisher Contains Anycase "MARTIN PRIKRYL" AND NetEventDirection = "OUTGOING" ) AND SrcProcName != "WinSCP.exe"
