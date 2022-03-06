@@ -1,4 +1,4 @@
-Title: Powershell - base64 string Get-WmiObject
+Title: PowerShell - base64 string Get-WmiObject
 description: Detects base64 encoded string Get-WmiObject
 Kill Chain: Various
 date: 1/1/2019
