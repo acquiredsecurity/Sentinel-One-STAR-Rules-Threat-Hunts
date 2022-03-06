@@ -1,0 +1,7 @@
+Title: Add User via CMD
+description: Adding Domain Users from command line
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: ProcessCmd RegExp "net\s+user(?:(?!\s+/add)(?:.|\n))*\s+/add
