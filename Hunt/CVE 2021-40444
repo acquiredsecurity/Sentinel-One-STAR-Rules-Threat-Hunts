@@ -5,6 +5,3 @@ operating_system: windows
 author: B-Rad Rough
 query: EndpointOS = "windows" AND SrcProcName In AnyCase ( "winword.exe" , "excel.exe" , "powerpnt.exe" )  AND EventType = "GET" AND ObjectType = "url" AND URL EndsWith Anycase "html" 
 false_positives: sharepoint --optional AND URL Does Not ContainCIS "sharepoint"
-
-
-
