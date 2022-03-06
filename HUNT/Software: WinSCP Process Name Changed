@@ -1,0 +1,4 @@
+
+
+
+( SrcProcPublisher Contains Anycase "MARTIN PRIKRYL" AND NetEventDirection = "OUTGOING" ) AND SrcProcName != "WinSCP.exe"
