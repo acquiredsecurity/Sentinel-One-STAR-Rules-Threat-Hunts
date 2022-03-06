@@ -1,0 +1,7 @@
+Title: Startup Persistence
+description: Detects BAT, JS VBS files in startup folder
+Kill Chain: Installation
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: FileFullName ContainsCIS "Programs\Startup" AND FileType In Contains Anycase ("vbs","js","bat") AND EventType = "File Creation"
