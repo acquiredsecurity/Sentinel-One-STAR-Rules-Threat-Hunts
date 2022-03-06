@@ -1,0 +1,7 @@
+Title: PowerShell - Unamnaged
+description: Detects tunmanaged powershell
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: SentinelOne
+query: ( SrcProcName not in ( "powershell.exe" , "powershell_ise.exe" ) and modulepath contains anycase "System.Management.Automation" ) AND not ( SrcProcPublisher In ( "MICROSOFT DYNAMIC CODE PUBLISHER" , "MICROSOFT CORPORATION" , "MICROSOFT WINDOWS" ) AND SrcProcVerifiedStatus = "verified" )
