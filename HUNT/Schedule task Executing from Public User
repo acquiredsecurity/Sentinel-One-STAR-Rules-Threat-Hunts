@@ -1,0 +1,7 @@
+Title: Windows Defender: Exclude Defender FilePath 
+description: Detects command line Windows Defender Exception reation in user AppData Folder
+Kill Chain: Installation
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query:SrcProcCmdLine Contains Anycase "Users\Public" AND ObjectType = "scheduled_task"
