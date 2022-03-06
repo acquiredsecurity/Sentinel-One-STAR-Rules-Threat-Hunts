@@ -1,1 +1,7 @@
-SrcProcCmdLine Contains Anycase "\\127.0.0.1\ADMIN$" AND SrcProcCmdLine Contains Anycase "cmd.exe /Q /c"
+title: Cobalt Strike - Jquery Get String
+description: Service Install / Local Host / Admin$
+Kill Chain: Post Explotation / Action
+date: 1/1/2022
+operating_system: Windows
+author: B-Rad 
+query:SrcProcCmdLine Contains Anycase "\\127.0.0.1\ADMIN$" AND SrcProcCmdLine Contains Anycase "cmd.exe /Q /c"
