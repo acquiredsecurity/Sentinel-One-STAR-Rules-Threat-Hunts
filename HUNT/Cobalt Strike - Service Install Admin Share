@@ -1,0 +1,1 @@
+SrcProcCmdLine Contains Anycase "\\127.0.0.1\ADMIN$" AND SrcProcCmdLine Contains Anycase "cmd.exe /Q /c"
