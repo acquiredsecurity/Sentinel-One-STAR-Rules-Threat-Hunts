@@ -1,0 +1,7 @@
+title: Request.zip
+description: URL Contains known IOC Request.zip
+Kill Chain: Delivery
+date: 3/6/2020
+operating_system: Any
+author: B-Rad 
+query: URL Contains Anycase "request.zip"
