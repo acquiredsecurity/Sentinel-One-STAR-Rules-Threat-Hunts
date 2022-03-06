@@ -1,0 +1,7 @@
+Title: PowerShell - Apostrophe Obfuscation
+description: Detects PowerShell Apostrophe Obfuscation to bypass and evade EDR and AV
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdLine Contains Anycase "N`e`w"
