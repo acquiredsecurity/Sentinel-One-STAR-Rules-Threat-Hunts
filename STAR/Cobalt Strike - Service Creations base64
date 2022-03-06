@@ -2,5 +2,5 @@ Title: Exposed Cobalt Strike - Service Creations base64
 description: Detect cobalt strike service creations
 date: 1/1/2019
 operating_system: windows
-author: B-Rad Rough
+author: B-Rad
 query: SrcProcCmdLine Contains "JABzAD0ATgB"
