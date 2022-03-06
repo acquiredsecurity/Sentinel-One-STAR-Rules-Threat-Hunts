@@ -1,0 +1,1 @@
+( SrcProcCmdLine RegExp "windows\\sys(tem32|wow64)\\[\\]+$" AND SrcProcCmdLine In Contains Anycase ( "rundll32" , "svchost" , "werfault" , "searchprotocolhost" , "gpupdate" , "regsvr32" , "msiexec" ) AND SrcProcCmdLine EndsWith Anycase "EXE" AND NetEventDirection = "OUTGOING" )
