@@ -1,5 +1,0 @@
-title: Exposed SSH/FTP
-description: Detect SSH/FTP exposed to the world!
-date: 1/1/2019
-operating_system: windows/nix
-query: ( DstPort = "22" AND NetEventDirection = "INCOMING" AND SrcIP RegExp "\b(?!(10)|192\.168|172\.(2[0-9]|1[6-9]|3[0-1])|(25[6-9]|2[6-9][0-9]|[3-9][0-9][0-9]|99[1-9]))[0-9]{1,3}\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" AND SrcIP != "127.0.0.1" )
