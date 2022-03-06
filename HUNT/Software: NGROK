@@ -1,0 +1,7 @@
+Title: Software:Ngrok
+description: Identify Ngrok Proxy in your environment
+Kill Chain: Exfil
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: CmdLine Contains Anycase "ngrok" and EventType = "Process Creation"
