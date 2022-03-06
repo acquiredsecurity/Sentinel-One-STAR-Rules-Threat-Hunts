@@ -1,0 +1,7 @@
+Title: PPSEXECSVC Install
+description: Detects Psexecinstall as service via SentinelOne Telemtry Fields
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query:IndicatorName = "ServiceCreate" AND IndicatorMetadata Contains Anycase "PSEXESVC"
