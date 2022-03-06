@@ -1,0 +1,7 @@
+title: Cobalt Strike - Jquery Get String
+description: Behaviors used cobalt strike via Jquery
+Kill Chain: Post Explotation / Action
+date: 1/1/2022
+operating_system: Windows
+author: B-Rad 
+query:SrcProcUser = "NT AUTHORITY\SYSTEM" AND SrcProcName = "rundll32.exe" AND Url Contains Anycase "jquery-3.3.1.min.js" AND UrlAction = "GET"
