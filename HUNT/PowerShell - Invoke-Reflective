@@ -1,0 +1,7 @@
+Title: PowerShell - Invoke-Reflection
+description: Detects the PowerShell command to Invoke-ReflectivePeInjection PowerSploit command
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdLine Contains Anycase “Invoke-Reflective”
