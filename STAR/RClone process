@@ -1,0 +1,7 @@
+Title: Rclone Process
+description: Identify RClone running in environemnt
+Kill Chain: Action:Exfil
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: TgtProcCmdLine Contains Anycase "rclone" OR ProcessDisplayName Contains Anycase "rclone" OR SrcProcCmdLine Contains Anycase "rclone"
