@@ -1,0 +1,7 @@
+Title: Legolo Reverse Tunnel
+description: Identify Potential use of Legolo Reverse Tunnel by detecting relayserver CMD parameter
+Kill Chain: Action:Persistence
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: TgtProcCmdLine Contains Anycase "relayserver" OR ProcessDisplayName Contains Anycase "relayserver" OR SrcProcCmdLine Contains Anycase "relayserver"
