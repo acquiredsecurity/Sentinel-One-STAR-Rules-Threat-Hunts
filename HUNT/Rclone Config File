@@ -2,5 +2,5 @@ Title: RClone COnfig File
 description: Detect RClone Config File
 date: 1/1/2019
 operating_system: windows
-author: B-Rad
+author: Joe W.
 query: FileFullName Contains "rclone.conf
