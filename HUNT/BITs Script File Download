@@ -1,0 +1,7 @@
+Title: BITs Script File Download
+description: BITs downloading Files
+Kill Chain: Installation/Exfiltration
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: SrcProcCmdScript Contains Anycase "Start-BitsTransfer"
