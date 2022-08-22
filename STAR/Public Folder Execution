@@ -1,0 +1,7 @@
+Title: Public Folder Execution
+description: execution from the Users\Public folder on windows
+Kill Chain: Various
+date: 1/1/2019
+operating_system: windows
+author: B-Rad
+query: Cmdline contains anycase "Users\Public"
