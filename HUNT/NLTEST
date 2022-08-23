@@ -4,4 +4,4 @@ Kill Chain: Installation
 date: 1/1/2019
 operating_system: windows
 author: B-Rad
-query: SrcProcCmdLine Contains Anycase "nltest" AND ( SrcProcCmdLine Contains Anycase "dclist" OR SrcProcCmdLine Contains Anycase "domain_trusts" ) AND SiteName StartsWith Anycase "MDR"
+query: SrcProcCmdLine Contains Anycase "nltest" AND ( SrcProcCmdLine Contains Anycase "dclist" OR SrcProcCmdLine Contains Anycase "domain_trusts" )
