@@ -1,10 +1,10 @@
 title: Exposed SSH
 description: Identify exposed SSH Port 22 
 Kill Chain: Exploit
-date: 1/1/2021
+date: 2/2/2022
 operating_system: Windows
 author: B-Rad 
 query: ( DstPort = "22" AND NetEventDirection = "INCOMING" AND SrcIP RegExp "\b(?!(10)|192\.168|172\.(2[0-9]|1[6-9]|3[0-1])|(25[6-9]|2[6-9][0-9]|[3-9][0-9][0-9]|99[1-9]))[0-9]{1,3}\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" AND SrcIP != "127.0.0.1" )
-
+XDR: event.network.protocolName = 'ssh' 
 Power Query: dst.port.number = 22 AND dst.ip.address matches '^(?!192\.168\.)' AND dst.ip.address matches '^(?!127\.)' AND dst.ip.address matches '^(?!10\.)' AND dst.ip.address matches '^(?!172\.1[6-9]\.)' AND dst.ip.address matches '^(?!172\.2[0-9]\.)' AND dst.ip.address matches '^(?!172\.3[0-1]\.)'
 | group count(dst.ip.address) by endpoint.name , dst.ip.address , dst.port.number 
