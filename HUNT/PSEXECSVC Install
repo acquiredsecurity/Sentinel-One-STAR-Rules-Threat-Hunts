@@ -4,4 +4,5 @@ Kill Chain: Various
 date: 1/1/2019
 operating_system: windows
 author: B-Rad
-query:IndicatorName = "ServiceCreate" AND IndicatorMetadata Contains Anycase "PSEXESVC"
+S1QL: IndicatorName = "ServiceCreate" AND IndicatorMetadata Contains Anycase "PSEXESVC"
+XDR: indicator.name = 'ServiceCreate' AND indicator.metadata contains 'PSEXESVC'
