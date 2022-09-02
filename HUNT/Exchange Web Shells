@@ -5,3 +5,4 @@ date: 8/1/2021
 operating_system: Windows
 author: B-Rad 
 query: EventType = "File Creation" AND FileFullName ContainsCIS "inetpub\wwwroot" AND TgtFileExtension In Contains Anycase ( "jsp" , "aspx" , "php" ) AND SrcProcName Not In ( "explorer.exe" , "msdeploy.exe" )
+XDR: event.type = 'File Creation' tgt.file.name matches ('exe$', 'jsp$', 'aspx$', 'php$') tgt.file.path contains 'inetpub\\wwwroot'
