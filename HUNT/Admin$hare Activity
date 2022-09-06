@@ -1,0 +1,9 @@
+Title: $Admin Activity
+description: identify usage of Admin$ share in Source Process Data
+Kill Chain: Installation
+date: 9/6/2022
+operating_system: windows
+author: B-Rad
+XDR: src.process.cmdline contains '\\127.0.0.1\\ADMIN$'
+PowerQuery: src.process.cmdline contains '\\127.0.0.1\\ADMIN$' dataSource.category = 'security' dataSource.name = 'SentinelOne'
+| group count(src.process.displayName) by endpoint.name, src.process.displayName, src.process.cmdline
