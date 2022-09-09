@@ -1,0 +1,17 @@
+Title: Unsigned Binary Makes Outbound Connection
+description: identify unsigned binaries connecting outside your network
+Kill Chain: Installation
+date: 9/9/2022
+operating_system: windows
+author: B-Rad
+XDR: src.process.cmdline contains '\\127.0.0.1\\ADMIN$'
+PowerQuery: Title: $Admin Activity
+description: identify usage of Admin$ share in Source Process Data
+Kill Chain: Installation
+date: 9/6/2022
+operating_system: windows
+author: B-Rad
+XDR: src.process.signedStatus='unsigned' event.network.direction='OUTGOING' dst.ip.address matches '^(?!192\.168\.)' AND dst.ip.address matches '^(?!127\.)' AND dst.ip.address matches '^(?!10\.)' AND dst.ip.address matches '^(?!172\.1[6-9]\.)' AND dst.ip.address matches '^(?!172\.2[0-9]\.)' AND dst.ip.address matches '^(?!172\.3[0-1]\.)' dataSource.category = 'security' dataSource.name = 'SentinelOne' 
+PowerQuery: src.process.signedStatus='unsigned' event.network.direction='OUTGOING' dst.ip.address matches '^(?!192\.168\.)' AND dst.ip.address matches '^(?!127\.)' AND dst.ip.address matches '^(?!10\.)' AND dst.ip.address matches '^(?!172\.1[6-9]\.)' AND dst.ip.address matches '^(?!172\.2[0-9]\.)' AND dst.ip.address matches '^(?!172\.3[0-1]\.)' dataSource.category = 'security' dataSource.name = 'SentinelOne' 
+| columns timestamp , endpoint.name , src.process.cmdline , dst.ip.address , dst.port.number
+| group count(src.process.cmdline) by src.process.cmdline 
