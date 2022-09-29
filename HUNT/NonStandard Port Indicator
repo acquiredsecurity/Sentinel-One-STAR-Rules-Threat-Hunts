@@ -1,2 +1,10 @@
-indicator.name = 'NonStandardPortNetworkConnection' dataSource.category = 'security' dataSource.name = 'SentinelOne'
+Title: Network Connections to NonStandard Port
+description: Network Connections to NonStandard port Using Mitre indicator Mapping
+Kill Chain: C2
+date: 9/29/2022
+operating_system: windows
+author: B-Rad
+S1QL query: IndicatorName = "NonStandardPortNetworkConnection"
+
+PowerQuery: indicator.name = 'NonStandardPortNetworkConnection' dataSource.category = 'security' dataSource.name = 'SentinelOne'
 |group count(src.process.displayName) by src.process.displayName, src.process.cmdline
