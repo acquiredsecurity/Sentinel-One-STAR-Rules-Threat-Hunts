@@ -1,0 +1,2 @@
+indicator.name = 'NonStandardPortNetworkConnection' dataSource.category = 'security' dataSource.name = 'SentinelOne'
+|group count(src.process.displayName) by src.process.displayName, src.process.cmdline
