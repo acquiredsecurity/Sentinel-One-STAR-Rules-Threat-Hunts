@@ -1,0 +1,8 @@
+title: Base64 Encoded EXE
+description: Obfuscated Binary file
+Kill Chain: Install/Exploit
+date: 1/1/2022
+operating_system: Windows
+author: B-Rad 
+query: SrcProcCmdLine Contains Anycase "TVqQAAMAAAA"
+S1QL2: src.process.cmdline contains 'TVqQAAMAAAA'
