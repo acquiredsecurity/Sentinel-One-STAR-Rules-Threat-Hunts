@@ -3,4 +3,4 @@ description: Detect cobalt strike service creations
 date: 1/1/2019
 operating_system: windows
 author: B-Rad
-query: SrcProcCmdLine Contains "JABzAD0ATgB"
+query: SrcProcCmdLine Contains "JABzA"
