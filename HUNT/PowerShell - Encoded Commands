@@ -1,0 +1,7 @@
+Title: PowerShell Encoded Commands
+description: Detect Encoded PowerShell command with SentinelOne indicator mapping 
+date: 11/2/2022
+operating_system: windows
+author: B-Rad
+query: IndicatorName = "EncodedPSCommand"
+XDR: indicator.name = 'EncodedPSCommand'
