@@ -1,1 +1,8 @@
+Title: Regsvr abuse by malware
+description: Find malware use of regsvr
+Kill Chain: Installation
+date: 11/4/2022
+operating_system: windows
+author: B-Rad
+query: SrcProcName = "regsvr32.exe" AND CmdLine Contains Anycase "AppData" AND TgtFileExtension = "dll"
 query: ObjectType = "scheduled_task" AND SrcProcName = "regsvr32.exe" 
