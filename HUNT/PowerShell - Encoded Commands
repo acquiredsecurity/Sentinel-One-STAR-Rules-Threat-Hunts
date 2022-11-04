@@ -3,5 +3,6 @@ description: Detect Encoded PowerShell command with SentinelOne indicator mappin
 date: 11/2/2022
 operating_system: windows
 author: B-Rad
+query: Cmdline RegExp ".*([A-Za-z0-9+\/]{10,})==.*|.*([A-Za-z0-9+\/]{10,})=.*|.*(\s|\=|\-|\:|\'|\")([A-Za-z0-9+\/]{4}){10,}.*" 
 query: IndicatorName = "EncodedPSCommand"
 XDR: indicator.name = 'EncodedPSCommand'
