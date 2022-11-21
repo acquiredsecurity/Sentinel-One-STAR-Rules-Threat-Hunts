@@ -5,3 +5,4 @@ date: 11/21/2022
 operating_system: windows
 author: B-Rad
 query: EventType = "Registry Value Create" AND SrcProcSignedStatus = "unsigned" AND RegistryKeyPath Contains Anycase "Run"
+XDR: event.type = 'Registry Value Create' registry.keyPath contains 'run' src.process.signedStatus = 'unsigned' 
