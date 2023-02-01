@@ -8,3 +8,5 @@ query: ( DstPort = "22" AND NetEventDirection = "INCOMING" AND SrcIP RegExp "\b(
 XDR: event.network.protocolName = 'ssh' 
 Power Query: dst.port.number = 22 AND dst.ip.address matches '^(?!192\.168\.)' AND dst.ip.address matches '^(?!127\.)' AND dst.ip.address matches '^(?!10\.)' AND dst.ip.address matches '^(?!172\.1[6-9]\.)' AND dst.ip.address matches '^(?!172\.2[0-9]\.)' AND dst.ip.address matches '^(?!172\.3[0-1]\.)'
 | group count(dst.ip.address) by endpoint.name , dst.ip.address , dst.port.number 
+
+XDR Activity Graph of SSH Brute Force Attacks: count(dst.port.number = 22 dst.ip.address matches '^(?!192\.168\.)' dst.ip.address matches '^(?!127\.)' dst.ip.address matches '^(?!10\.)' dst.ip.address matches '^(?!172\.1[6-9]\.)' dst.ip.address matches '^(?!172\.2[0-9]\.)' dst.ip.address matches '^(?!172\.3[0-1]\.)' dataSource.category = 'security' )
