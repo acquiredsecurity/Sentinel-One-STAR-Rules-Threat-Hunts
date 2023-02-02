@@ -1,0 +1,8 @@
+Title: Registry - Run Key Analysis
+description: Analyze RunKeys
+Kill Chain: Installation\Exploit
+date: 2/2/2023
+operating_system: windows
+author: B-Rad
+query: ObjectType = "registry" AND  RegistryKeyPath Contains Anycase "Windows\CurrentVersion\Run"
+XDR: event.category = 'registry' registry.keyPath contains 'Windows\\CurrentVersion\\Run'
