@@ -1,0 +1,7 @@
+Title: Curl being Naughty
+description: Track Curl making cinnections to public IP space
+Kill Chain: Various
+date: 2/7/2023
+operating_system: windows
+author: B-Rad
+query: src.process.cmdline contains 'curl.exe' event.network.direction='OUTGOING' AND dst.ip.address matches '^(?!10\.)' AND dst.ip.address matches '^(?!172\.1[6-9]\.)' AND dst.ip.address matches '^(?!172\.2[0-9]\.)' AND dst.ip.address matches '^(?!172\.3[0-1]\.)'
