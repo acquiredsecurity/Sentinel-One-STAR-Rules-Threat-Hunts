@@ -4,4 +4,4 @@ Kill Chain: Installation
 date: 1/1/2019
 operating_system: windows
 author: B-Rad
-query: TgtProcCmdLine Contains Anycase "Add-MpPreference" AND (TgtProcCmdLine Contains Anycase "AppData" OR TgtProcCmdLine Contains Anycase "Program Data”
+query: TgtProcCmdLine Contains Anycase "Add-MpPreference" AND (TgtProcCmdLine Contains Anycase "AppData" OR TgtProcCmdLine Contains Anycase "Program Data”)
