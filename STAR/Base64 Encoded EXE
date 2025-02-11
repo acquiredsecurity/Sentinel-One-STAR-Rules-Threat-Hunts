@@ -4,5 +4,5 @@ Kill Chain: Install/Exploit
 date: 1/1/2022
 operating_system: Windows
 author: B-Rad 
-query: SrcProcCmdLine Contains Anycase "TVqQAAMAAAA"
-S1QL2: src.process.cmdline contains 'TVqQAAMAAAA'
+S1QL: SrcProcCmdLine Contains Anycase "TVqQAAMAAAA"
+S1QL 2.0: src.process.cmdline contains 'TVqQAAMAAAA'
