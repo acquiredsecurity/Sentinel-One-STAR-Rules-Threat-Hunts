@@ -4,4 +4,5 @@ Kill Chain: Delivery
 date: 3/6/2020
 operating_system: Any
 author: B-Rad 
-query: URL Contains Anycase "request.zip"
+S1QL: query: URL Contains Anycase "request.zip"
+S1QL 2.0: url.address contains 'request.zip'
