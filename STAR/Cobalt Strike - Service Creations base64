@@ -4,3 +4,6 @@ date: 1/1/2019
 operating_system: windows
 author: B-Rad
 query: cmdline Contains "JABzA"
+S1QL: SrcProcCmdLine Contains Anycase "TVqQAAMAAAA"
+S1QL 2.0: src.process.cmdline contains 'JABzA'
+S1QL 2.0: #cmdline contains ;JABzA'
