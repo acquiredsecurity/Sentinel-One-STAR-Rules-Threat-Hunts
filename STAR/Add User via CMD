@@ -4,4 +4,5 @@ Kill Chain: Various
 date: 1/1/2019
 operating_system: windows
 author: B-Rad
-query: ProcessCmd RegExp "net\s+user(?:(?!\s+/add)(?:.|\n))*\s+/add"
+S1QL: ProcessCmd RegExp "net\s+user(?:(?!\s+/add)(?:.|\n))*\s+/add"
+S1QL 2.0: #cmdline matches '(?s)net\\s+user(?!.*\\s+/add).*?\\s+/add'
